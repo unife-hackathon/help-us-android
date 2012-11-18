@@ -32,7 +32,7 @@ public class MainActivity extends SherlockActivity implements LocationListener {
 	private Location mostRecentLocation;
 	private WebView webView;
 	private static String BASE_URL = "file:///android_asset/maps.html";
-	private static String REMOTE_URL = "http://10.1.90.56:3000";
+	private static String REMOTE_URL = "http://10.1.90.76:3000";
 	private static String MARKERS_PATH = "/home/index.json";
 //	private static String URL = "file:///android_asset/maps.html";
 //	private static String URL = "http://10.1.90.76:3000/";

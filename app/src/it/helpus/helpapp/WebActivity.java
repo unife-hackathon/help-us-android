@@ -60,6 +60,17 @@ public class WebActivity extends SherlockActivity {
 		return true;
 	}
 
+	@Override
+    public void onBackPressed() {
+        // Pop the browser back stack or exit the activity
+        if (webView.canGoBack()) {
+        	webView.goBack();
+        }
+        else {
+            super.onBackPressed();
+        }
+    }
+
 	/** Sets up the WebView object and loads the URL of the page **/
 	@SuppressLint("SetJavaScriptEnabled")
 	private void setupWebView() {

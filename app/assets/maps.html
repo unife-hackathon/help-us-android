@@ -12,7 +12,8 @@
             var currentLatitude = 42.745334, currentLongitude = 12.738430;
             var defaultZoom = 12;
             var bounds = new google.maps.LatLngBounds();
-
+			var infowindow;
+			
             function fixLocation() {
                 latitude = android.getLatitude();
                 longitude = android.getLongitude();
